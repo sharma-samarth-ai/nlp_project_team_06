@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Email Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Phishing Email Detector</h1>
+        <form action="/" method="POST">
+            <textarea name="email_text" placeholder="Enter email content here..." required>{{ email_text or "" }}</textarea>
+            <div class="model-selection">
+                <label>Select Model:</label>
+                <select name="model">
+                    <option value="Naive Bayes" {% if model_choice == 'Naive Bayes' %}selected{% endif %}>Naive Bayes</option>
+                    <option value="Logistic Regression" {% if model_choice == 'Logistic Regression' %}selected{% endif %}>Logistic Regression</option>
+                    <option value="LSTM" {% if model_choice == 'LSTM' %}selected{% endif %}>LSTM</option>
+                </select>
+            </div>
+            <button type="submit">Detect Phishing</button>
+        </form>
+        {% if result %}
+            <div class="result">
+                <h2>Result:</h2>
+                <p>{{ result }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
