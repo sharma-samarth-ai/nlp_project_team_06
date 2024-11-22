@@ -5,6 +5,8 @@ This repository includes the files and project report involved in the making of 
 Natural Language Processing, offered to students of Indian Institute of Information Technology, Lucknow
 
 
+![Alt text](PhishHook.png)
+
 This project was a result of the team number 6, whose members are as follows
   * Aditya Tripathi: LCB2021011
   * Saumya: LIT2021058
