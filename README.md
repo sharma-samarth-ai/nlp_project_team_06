@@ -14,8 +14,7 @@ This project was a result of the team number 6, whose members are as follows
   * Ashwani Dhiman: LCI2021046
 
 
-The aim of this project development was to learn NLP methodologies.
+The aim of this project development was to learn NLP methodologies. The website is currently being locally hosted, but the future developments include global hosting in order to facilitate global cooperation and further develop the project
 
-
-
-
+Current 
+![Alt text](PhishHook.png)
